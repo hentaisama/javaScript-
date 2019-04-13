@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<button id="user">用户管理</button>
+		<button id="post">帖子管理</button>
+		<button id="shop">商品管理</button>
+		<button id="home">首页</button>
+		<script>
+			user.onclick=function(){
+				win=window.top.frames;
+				win[1].location='left.html';
+			};
+			post.onclick=function(){
+				win=window.top.frames;
+				win[1].location='post.html';
+			}
+			shop.onclick=function(){
+				win=window.top.frames;
+				win[1].location='shop.html';
+			}
+			home.onclick=function(){
+				top.location='home.html'
+			}
+		</script>
+	</body>
+</html>
